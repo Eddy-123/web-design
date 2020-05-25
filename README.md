@@ -1,2 +1,2 @@
 # web-design
-Building many design for websites
+Inspired by Drew Ryan's tutorial
