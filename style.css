@@ -1,206 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
-html, body{
-  height: 100%;
-  width: 100;
-  font-style: 'Poppins', sans-serif;
-  color: #222222;
+body {
+  overflow-x: hidden; /*--right gutter fix--*/
 }
-.navbar{
-  padding: .8rem;
-}
-.navbar-nav li{
-  padding-right: 20px;
-}
-.nav-link{
-  font-size: 1.1em !important;
-}
-.carousel-inner img{
-  width: 100%;
-  height: 100%;
-}
-.carousel-caption{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.carousel-caption h1{
-  font-size: 500%;
+.navbar {
   text-transform: uppercase;
-  text-shadow: 1px 1px 15px #000;
+  background-color: #505962;
 }
-.carousel-caption h3{
-  font-size: 200%;
-  font-weight: 500;
-  text-shadow: 1px 1px 10px #000;
-  padding-bottom: 1rem;
+.navbar img {
+  height: 2rem;
 }
-.btn-primary{
-  background-color: #6648b1;
-  border: 1px solid #6648b1;
+.home-inner {
+  background: url("img/landing.png");
 }
-.btn-primary:hover{
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
+.caption {
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  text-transform: uppercase;
 }
-.jumbotron{
-  padding: 1rem;
-  border-radius: 0;
-}
-.padding{
+.caption h3 {
+  font-size: 2.4rem;
   padding-bottom: 2rem;
 }
-.welcome{
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 2rem;
+.caption .btn {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 2rem;
+  padding: 0.5rem 1.1rem;
 }
-.welcome hr{
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
+h3.heading {
+  text-align: center;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
 }
-.fa-code{
-  color: #e54d26;
+.padding {
+  padding: 2rem 0;
 }
-.fa-bold{
-  color: #563d7c;
-}
-.fa-css3{
-  color: #2163af;
-}
-.fa-code, .fa-bold, .fa-css3{
-  font-size: 4em;
-  margin: 1rem;
-}
-.fun{
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.gif{
+.portfolio {
   max-width: 100%;
+  min-width: 100%;
 }
-.social a{
-  font-size: 4.5rem;
-  padding: 3rem;
+.no-padding .col-md-6 {
+  padding: 0;
 }
-.fa-facebook{
-  color: #3b5998;
+.card {
+  margin: 2rem;
 }
-.fa-twitter{
-  color: #00aced;
+.footer .row {
+  background: #505962;
+  padding: 1rem 2rem 3rem;
+  color: white;
 }
-.fa-instagram{
-  color: #517fa4;
+.footer img {
+  height: 2rem;
+  margin: 1.5rem 0;
 }
-.fa-youtube{
-  color: #bb0000;
-}
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-google-plus-g:hover,
-.fa-instagram:hover,
-.fa-youtube:hover{
-  color: #d5d5d5;
-}
-footer{
-  background: #3f3f3f;
-  color: #d5d5d5;
-  padding-top: 2rem;
-}
-hr.light{
-  border-top: 1px solid #d5d5d5;
-  width: 75%;
-  margin-top: .8rem;
-  margin-bottom: 1rem;
-}
-footer a{
-  color: #d5d5d5;
-}
-hr.light-100{
-  border-top: 1px solid #d5d5d5;
-  width: 100%;
-  margin-top: .8rem;
-  margin-bottom: 1rem;
-
-}
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-  .social a{
-    font-size: 4em;
-    padding: 2rem;
-  }
-  }
-@media (max-width: 768px) {
-  
-  .carousel-caption{
-    top: 45%;
-  }
-  .carousel-caption h1{
-    font-size: 350%;
-  }
-  .carousel-caption h3{
-    font-size: 140%;
-    font-weight: 400;
-    padding-bottom: .2rem;
-  }
-  .carousel-caption-btn{
-    font-size: 95%;
-    padding: 8px 14px;
-  }
-  .display-4{
-    font-size: 200%;
-  }
-  .social a{
-    font-size: 2.5em;
-    padding: 1.2rem;
-  }
-}
-@media (max-width: 576px) {
-  .carousel-caption{
-    top: 40%;
-  }
-  .carousel-caption h1{
-    font-size: 250%;
-  }
-  .carousel-caption h3{
-    font-size: 110%;
-  }
-  .carousel-caption-btn{
-    font-size: 90%;
-    padding: 4px 8px;
-  }
-  .carousel-indicators{
-    display: none;
-  }
-  .display-4{
-    font-size: 160%;
-  }
-  .social a{
-    font-size: 2em;
-    padding: .7rem;
-  }
-}
-
-
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-/*--- Fixed Background Image --*/
-figure {
+/*--- iOS Landing Page Fix --*/
+.landing {
   position: relative;
   width: 100%;
-  height: 60%;
-  margin: 0!important;
+  height: 100vh;
+  display: table;
+  background: #e9ecef;
+  z-index: -1;
 }
-.fixed-wrap {
+.home-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
   top: 0;
@@ -208,10 +75,9 @@ figure {
   width: 100%;
   height: 100%;
 }
-#fixed {
-  background-image: url('img/mac.png');
+.home-inner {
   position: fixed;
-  display: block;
+  display: table;
   top: 0;
   left: 0;
   width: 100%;
@@ -219,39 +85,6 @@ figure {
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
 }
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
-
-
-
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-
-
-
-
-
-
-
