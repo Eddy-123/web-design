@@ -1,7 +1,9 @@
-/*-- Body Reset --*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+/*============= BODY =============*/
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   color: #616971;
 }
 
@@ -44,11 +46,15 @@ body {
   color: #4981b3!important;
 }
 
+/*============= PROFILE CARD =============*/
+
+
 /*============= ELEMENT A =============*/
 .element-a .main-row{
   margin: 8%;
-  background-color: #eee;
-  box-shadow: 0 0 0 10px 10px rgba(0, 0, 0, .05);
+  background-color: #f8f9fa;/* #f8f9fa */
+  /*box-shadow: 0 0 0 10px 10px rgba(0, 0, 0, .05);*/
+  border: 1px solid #869c98;
   border-radius: 0.5rem;
 }
 .element-a .blog-img > img{
