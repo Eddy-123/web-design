@@ -46,6 +46,21 @@ body {
   color: #4981b3!important;
 }
 
+/*============= BOOTSTRAP CARD IMAGE WITH ZOOM EFFECT =============*/
+.card-image .container{
+  margin-top: 10%;  
+}
+.card-image .inner{
+  overflow: hidden;
+}
+.card-image .inner img{
+  transition: all 1.5s ease;
+}
+.card-image .inner:hover img{
+  transform: scale(1.5);
+}
+
+
 /*============= PROFILE CARD =============*/
 
 
