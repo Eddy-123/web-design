@@ -15,6 +15,36 @@
 </head>
 <body>
 
+	<!-- Sidebar menu -->
+	<div class="">
+		<input type="checkbox" id="check">
+		<label for="check">
+			<i class="fas fa-bars" id="btn"></i>
+			<i class="fas fa-times" id="cancel"></i>
+		</label>
+		<div class="sidebar">
+			<header>My app</header>
+			<ul>
+				<li><a href="#"><i class="fas fa-qrcode"></i>   Dashboard</a></li>
+				<li><a href="#"><i class="fas fa-link"></i>   Shortcuts</a></li>
+				<li><a href="#"><i class="fas fa-stream"></i>   Overview</a></li>
+				<li><a href="#"><i class="fas fa-calendar-week"></i>   Events</a></li>
+				<li><a href="#"><i class="fas fa-question-circle"></i>   About</a></li>
+				<li><a href="#"><i class="fas fa-sliders-h"></i>   Services</a></li>
+				<li><a href="#"><i class="fas fa-envelope"></i>   Contact</a></li>
+			</ul>
+			<section></section>
+		</div>
+	</div>
+	<!--
+		Sidebar Menu using HTML & CSS
+		Query:
+			Fix menu fa-bars and fa-times rendering
+			Add an image to the section as hero image
+	-->
+	<!-- Sidebar menu end -->
+
+
 	<!-- Top Bar -->
 	<div class="top-bar d-none">
 		<div class="container">
@@ -58,7 +88,7 @@
 	<!-- End Navigation -->
 
 	<!-- Second navbar -->
-	<div class="second-navbar mb-4">
+	<div class="second-navbar mb-4 d-none">
 		<nav>
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
@@ -75,11 +105,10 @@
 		</nav>
 	</div>
 
-	<div class="hero-image">
+	<div class="hero-image d-none">
 		<img src="img/matrix.jpg" class="img-fluid">
 	</div>
 	<!-- End Second navbar -->
-
 
 	<!-- Element A -->
 	<div class="element-a mt-3">
