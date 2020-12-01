@@ -149,6 +149,66 @@ label #cancel{
   color: #4981b3!important;
 }
 
+
+/*============= PRICING SECTION =============*/
+.price-header{
+  padding: 0 20px;
+}
+.price-header h1{
+  color: black;
+  text-align: center;
+  font-size: 45px;
+}
+.price-box h2{
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.price h3{
+  font-size: 25px;
+  color: black;
+}
+.price p{
+  font-size: 15px;
+  margin-top: -10px;
+}
+.price-box a{
+  color: white;
+  margin-top: 20px;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+
+/*============= ELEMENT A =============*/
+.element-a .main-row{
+  margin: 8%;
+  background-color: #f8f9fa;/* #f8f9fa */
+  /*box-shadow: 0 0 0 10px 10px rgba(0, 0, 0, .05);*/
+  border: 1px solid #869c98;
+  border-radius: 0.5rem;
+}
+.element-a .blog-img > img{
+  width: 100%;
+  height: 100%;
+  transform: translateY(-30px);
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+.element-a .ul-cls{
+  justify-content: center;
+}
+.element-a .ul-cls li{
+  cursor: pointer;
+}
+.blog-title > h3{
+  font-style: normal;
+  font-weight: 400;
+}
+.blog-desc > p{
+  font-style: normal;
+  line-height: 2;
+}
+
 /*============= TEAM =============*/
 #team img{
   margin-top: -50px;
@@ -193,37 +253,6 @@ label #cancel{
 
 /*============= PROFILE CARD =============*/
 
-
-/*============= ELEMENT A =============*/
-.element-a .main-row{
-  margin: 8%;
-  background-color: #f8f9fa;/* #f8f9fa */
-  /*box-shadow: 0 0 0 10px 10px rgba(0, 0, 0, .05);*/
-  border: 1px solid #869c98;
-  border-radius: 0.5rem;
-}
-.element-a .blog-img > img{
-  width: 100%;
-  height: 100%;
-  transform: translateY(-30px);
-  object-fit: cover;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
-}
-.element-a .ul-cls{
-  justify-content: center;
-}
-.element-a .ul-cls li{
-  cursor: pointer;
-}
-.blog-title > h3{
-  font-style: normal;
-  font-weight: 400;
-}
-.blog-desc > p{
-  font-style: normal;
-  line-height: 2;
-}
 
 /*============= CAROUSEL =============*/
 
